@@ -4,7 +4,7 @@
     "tag": 4305710464068981555,
     "orderId": "aeba97d3-bdfa-4097-acac-bbc06326fa84",
     "transactionType": "Sale",
-    "terminalID": "00000001",
+    "terminalID": "29413466",
     "transactionAmount": 1000,
     "syncTransactionDataPayload": {
         "waiterName": "Vasily Poopkine",
