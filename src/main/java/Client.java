@@ -7,13 +7,13 @@ import java.io.IOException;
 import java.net.Socket;
 import java.nio.charset.StandardCharsets;
 
-public class BaseForTest {
+public class Client {
     // Создаю сокет с ip и портом + создаю объекты для удобства отправки и получения данных
     Socket clientSocket;
 
     {
         try {
-            clientSocket = new Socket("192.168.50.37", 9999);
+            clientSocket = new Socket("10.24.10.202", 9999);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }

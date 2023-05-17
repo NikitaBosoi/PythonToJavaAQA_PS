@@ -21,7 +21,7 @@ public class MatcherPay {
             "    }\n" +
             "}";
 
-    private String awaitExample= "{\n" +
+    private String awaitCardExample= "{\n" +
             "    \"type\": \"com.katemedia.android.lib.kate.payment.model.models.AwaitForCardOutput\",\n" +
             "    \"command\": \"PAY\",\n" +
             "    \"tag\": 4305710464068981555,\n" +
@@ -148,8 +148,8 @@ public class MatcherPay {
         return startedExample;
     }
 
-    public String getAwaitExample() {
-        return awaitExample;
+    public String getAwaitCardExample() {
+        return awaitCardExample;
     }
 
     public String getReadingCardExample() {
@@ -208,11 +208,11 @@ public class MatcherPay {
     }
 
     public void matchTransactionStateAwaitForCard(String res) throws Exception {
-        getAwaitExample();
-        if(!res.equals(awaitExample) )
+        getAwaitCardExample();
+        if(!res.equals(awaitCardExample) )
         {
             System.out.println(res);
-            System.out.println(awaitExample);
+            System.out.println(awaitCardExample);
             throw new Exception("Result is not equal to the expected one");
         }
     }
