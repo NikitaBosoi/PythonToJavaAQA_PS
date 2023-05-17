@@ -10,5 +10,6 @@
         "waiterName": "Vasily Poopkine",
         "waiterPhone": "8 800 555-35-35"
     },
-    "customerEmail": "kate@katemedia.eu"
+    "customerEmail": "test.receipt@katemedia.eu"
+    "restaurantTableNo": "42"
 }

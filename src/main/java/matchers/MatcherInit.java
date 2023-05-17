@@ -10,7 +10,7 @@ public class MatcherInit {
             "    ]\n" +
             "}";
 
-    public String getInit() {
+    public String getInitResponseExample() {
         return initExample;
     }
 }

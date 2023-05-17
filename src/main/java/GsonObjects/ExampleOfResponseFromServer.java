@@ -1,5 +1,8 @@
 package GsonObjects;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class ExampleOfResponseFromServer {
 
     private String type;
@@ -15,8 +18,17 @@ public class ExampleOfResponseFromServer {
     private String hostResponse;
     private String approvedAmount;
     private String cardFormIndicator;
-    private String internalId;
+    private int internalId;
     private String autoReversalNeeded;
+    private ArrayList<String> loadedTerminalIDs;
+    private String errorDescription;
+    private String kcv;
+    private String state;
+    private String maxAttempts;
+    private String result;
+    private String message;
+
+    private MeanCode meanCode;
 
 
     public String getType() {
@@ -131,11 +143,44 @@ public class ExampleOfResponseFromServer {
         this.rrn = rrn;
     }
 
-    public String getInternalId() {
+    public int getInternalId() {
         return internalId;
     }
 
-    public void setInternalId(String internalId) {
+    public void setInternalId(int internalId) {
         this.internalId = internalId;
     }
+
+    public ArrayList<String> getLoadedTerminalIDs() {
+        return loadedTerminalIDs;
+    }
+
+    public String getErrorDescription() {
+        return errorDescription;
+    }
+
+    public String getKcv() {
+        return kcv;
+    }
+
+    public MeanCode getMeanCode() {
+        return meanCode;
+    }
+
+    public String getState() {
+        return state;
+    }
+
+    public String getMaxAttempts() {
+        return maxAttempts;
+    }
+
+    public String getResult() {
+        return result;
+    }
+
+    public String getMessage() {
+        return message;
+    }
 }
+
