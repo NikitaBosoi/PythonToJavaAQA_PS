@@ -1,9 +1,6 @@
 import appiumAutomate.drivers.AndroidDriverProvider;
 import com.codeborne.selenide.Configuration;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
-
-import java.io.IOException;
 
 import static com.codeborne.selenide.Selenide.open;
 
@@ -28,7 +25,7 @@ public class Base {
         Configuration.browserSize = null;
         Configuration.browser = AndroidDriverProvider.class.getName();
         open();
-        AqaStart aqa = new AqaStart();
+        AqaServerButton aqa = new AqaServerButton();
         aqa.clickAQAServerStartStopButton();
     }
 }

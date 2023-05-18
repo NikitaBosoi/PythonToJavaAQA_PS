@@ -33,7 +33,7 @@ public class TestClass extends Base {
     }
 
     @Test
-    public void payTest() throws Exception {
+    public void cancelTest() throws Exception {
         Runner r = new Runner();
         r.runWebParamTest();
         r.runLoadTMK();
@@ -49,10 +49,5 @@ public class TestClass extends Base {
         ISORequest = r.dBase.selectReversalISOMessagesOfTransaction("Request", payResp.getInternalId());
         ISOResponse = r.dBase.selectReversalISOMessagesOfTransaction("Response", payResp.getInternalId());
         r.dBase.assertISOCancelRequestResponse(ISORequest, ISOResponse);
-    }
-
-    @Test
-    public void e2eTest() throws Exception {
-
     }
 }

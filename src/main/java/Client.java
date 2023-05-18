@@ -13,7 +13,7 @@ public class Client {
 
     {
         try {
-            clientSocket = new Socket("10.24.10.202", 9999);
+            clientSocket = new Socket("10.24.10.212", 9999);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }

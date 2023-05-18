@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 import static com.codeborne.selenide.Selenide.$x;
 
-public class AqaStart extends Base{
+public class AqaServerButton extends Base{
     AppiumDriver driver;
 
 
@@ -26,7 +26,7 @@ public class AqaStart extends Base{
     public void clickAQAServerStartStopButton() throws InterruptedException {
         if(stopStartAqaButton().getText().contains("STOP")){
             stopStartAqaButton().click();
-            Thread.sleep(2000);
+            Thread.sleep(500);
             stopStartAqaButton().click();
         } else if (stopStartAqaButton().getText().contains("START")) {
             stopStartAqaButton().click();
